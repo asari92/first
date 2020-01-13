@@ -1,0 +1,41 @@
+.button {
+  padding: 6px 20px;
+  display: inline-block;
+  vertical-align: baseline;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 4px;
+  background-color: #712073;
+  color: #ffffff;
+}
+
+body {
+  width: 70%;
+  margin: auto;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-top: 1.5em;
+}
+
+table {
+  border: 1px solid black;
+}
+
+img{
+  width: 100%;  
+}
+
+.imgfig {
+  float: right;
+  font-style: italic; 
+  word-break: keep-all;
+  width: 270px;
+}

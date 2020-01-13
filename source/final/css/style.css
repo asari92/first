@@ -1,0 +1,581 @@
+body {
+  margin: 0;
+}
+
+.robotFont {
+  font-family: "Roboto", "Helvetica Nue", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #1d1d1d;
+}
+
+header {
+  padding: 16px 97px 16px 81px;
+  background-color: white;
+
+  position: fixed;
+  top: 0;
+  left: 0px;
+  right: 0px;
+  box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+
+  z-index: 1;
+}
+
+.head {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.rhead {
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.enter {
+  background-color: white;
+
+  border: 1px solid #e0e0e0;
+  box-sizing: border-box;
+  border-radius: 2px;
+
+  width: 78px;
+  height: 40px;
+
+  font-weight: 500;
+  font-size: 13px;
+
+  margin-right: 27px;
+}
+
+main.restaurants {
+  margin-top: 128px;
+  padding: 0px 87px 80px 81px;
+}
+
+.search {
+  padding-left: 2px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgba(117, 117, 117, 0.3);
+
+  color: rgba(98, 98, 98, 0.5);
+
+  margin-bottom: 40px;
+}
+
+.search::-moz-placeholder {
+  color: rgba(98, 98, 98, 0.5); /*замена цвета текста placholdera в mozila */
+}
+.search::-webkit-input-placeholder {
+  color: rgba(98, 98, 98, 0.5); /*замена цвета текста placholdera в chrome и safari */
+}
+
+/* цвет placeholdera сливается при фокусе */
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+input:focus:-moz-placeholder {
+  color: transparent;
+} /* FF 4-18 */
+input:focus::-moz-placeholder {
+  color: transparent;
+} /* FF 19+ */
+input:focus:-ms-input-placeholder {
+  color: transparent;
+} /* IE 10+ */
+
+h1.robotFont {
+  font-size: 22px;
+  line-height: 34px;
+  /* identical to box height, or 155% */
+  margin: 16px 0;
+}
+
+.col-xs-12,.col-md-6,.col-lg-4{
+  position: relative;
+  z-index: 0;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  margin-bottom: 16px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card img{
+  width: 100%;
+}
+
+/* Add some padding inside the card container */
+/* .cont {
+  padding: 16px 20px 20px 20px;
+} */
+
+.name {
+  margin: 0;
+}
+
+.price {
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height, or 150% */
+  color: #626262;
+  margin: 4px 0px;
+}
+
+.time {
+  font-size: 13px;
+  line-height: 21px;
+  /* identical to box height, or 162% */
+  margin: 0;
+}
+
+.card_link{
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+footer {
+  background-color: #262626;
+  padding: 56px 87px 40px 81px;
+}
+
+.f1 {
+  margin-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 32px 0 25px 0; /* суммируем отступ к отступу ul li 23px*/
+  display: flex;
+}
+
+.flang {
+  margin-bottom: 33px;
+}
+
+.ue {
+  color: #fff;
+
+  line-height: 19px;
+}
+
+.green {
+  color: #49a144;
+}
+
+.social {
+  margin: 0.1rem;
+}
+
+.fcenter {
+  margin: 0 128px 0 97px;
+}
+
+ul {
+  list-style: none; /* Убираем маркеры */
+  margin: 0;
+  padding: 0; /* Обнуляем все отступы */
+  overflow: hidden; /* Отменяем обтекание */
+}
+
+.f1 ul li {
+  margin-bottom: 23px; /* суммируем отступ к отступу f1 25px*/
+}
+
+.fmenu {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.f2 {
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 40px 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.apple {
+  margin-right: 40px;
+}
+
+.apple img {
+  width: 120.66px;
+  height: 40px;
+  display: block;
+}
+
+.google img {
+  width: 135px;
+  height: 40px;
+  display: block;
+}
+
+.f3 {
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  padding-top: 40px;
+  margin: 0;
+}
+
+.end {
+  text-decoration: none;
+  color: #fff;
+
+  font-size: 11px;
+  line-height: 13px;
+}
+
+.e2 {
+  margin-left: 174px;
+  margin-right: 148px;
+}
+
+.btn-up {
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  right: 16px;
+  bottom: 24px;
+}
+
+/* restaurantrestaurantrestaurantrestaurantrestaurantrestaurantrestaurantrestaurantrestaurantrestaurantrestaurant */
+
+main.restaurant {
+  margin-top: 72px;
+  padding: 0px 0 24px 0;
+}
+
+.pushkinBack {
+  background-image: url(../img/restaurant/backg.svg);
+  background-position: center center;
+  background-size: cover;
+  padding: 127.5px 0;
+  margin-bottom: 112px;
+}
+
+.pushkin {
+  position: absolute;
+  left: 8px;
+  top: 203px;
+  background: #ffffff;
+  box-shadow: 0px 0px 16px rgba(117, 117, 117, 0.2);
+  border-radius: 2px;
+  text-align: center;
+}
+
+h1.pname.robotFont {
+  font-size: 24px;
+  line-height: 28px;
+  margin: 24px 0px 0 0px;
+}
+.pkitchen {
+  font-size: 14px;
+  line-height: 16px;
+  color: #626262;
+  margin: 40px 0px 16px 0px;
+}
+.ptime {
+  font-size: 12px;
+  line-height: 14px;
+
+  color: #ffffff;
+
+  background: #262626;
+  border-radius: 16px;
+
+  padding: 9px 16px 8px 16px;
+  margin: 0 105px 24px 105px;
+}
+.dropdown ul{
+  line-height: 19px;
+  display: none;
+}
+
+.dropdown a {
+  text-decoration: none;
+  color: #1d1d1d;
+}
+
+.menuName {
+  font-size: 22px;
+  line-height: 34px;
+  margin: 24px 0 56px 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.menuName::after {
+  width: 50px;
+  content: "";
+  position: absolute;
+  border-bottom: #757575 solid 1px;
+  bottom: -12px;
+}
+
+.card2 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin: 0 0px 16px 0px;
+  border-bottom: 1px solid rgba(117, 117, 127, 0.2);
+  mix-blend-mode: normal;
+  padding: 0;
+}
+
+.card2 img {
+  height: 102px;
+  margin-bottom: -1px;
+  border-radius: 2px;
+}
+
+.name2 {
+  font-size: 14px;
+  margin: 0 0px 4px 0;
+}
+
+.price2 {
+  font-size: 13px;
+  line-height: 21px;
+  color: #626262;
+  margin: 0 0px 16px 0;
+}
+
+.time2 {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 21px;
+  margin: 0;
+}
+
+/* mediamediamediamediamediamediamediamediamediamediamediamediamediamediamediamediamediamediamedia */
+
+@media (max-width: 991px) {
+  header {
+    padding: 16px 18px 16px 8px;
+  }
+  main.restaurants {
+    padding: 0px 8px 48px 8px;
+  }
+  .card img{
+    height: 256px;
+  }
+  footer {
+    padding: 56px 8px 40px 8px;
+  }
+  .fcenter {
+    margin: 0 60px 0 80px;
+  }
+  .e2 {
+    margin-left: 106px;
+    margin-right: 80px;
+  }
+}
+
+
+@media (max-width: 624px) {
+  header {
+    padding: 16px 16px 16px 8px;
+  }
+  .enter {
+    margin: 0;
+  }
+  .basket {
+    display: none;
+  }
+  main.restaurants {
+    padding: 0px 4px 48px 8px;
+  }
+  .card img{
+    height: 246px;
+  } 
+  .f1 {
+    padding: 32px 0 17px 0;
+    flex-direction: column;
+  }
+  .fcenter {
+    margin: 39px 0 0 0;
+  }
+  .f2 {
+    padding: 24px 0;
+  }
+  .apple {
+    margin-right: 24px;
+  }
+  .apple img {
+    width: 108.6px;
+    height: 36px;
+  }
+  .google img {
+    width: 124px;
+    height: 36px;
+  }
+  .ends {
+    display: flex;
+    flex-direction: column;
+  }
+  .e2 {
+    margin: 24px 0;
+  }
+  .btn-up {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+
+@media (min-width: 624px) {
+  main.restaurant {
+    padding: 0px 0 16px 0;
+  }
+  .pushkinBack {
+    padding: 182px 0;
+    background-position: center 75%;
+    margin-bottom: 0;
+  }
+  .pushkin {
+    top: 152px;
+  }
+  h1.pname.robotFont {
+    font-size: 36px;
+    line-height: 42px;
+    margin: 38px 0px 0 0px;
+  }
+  .pkt {
+    display: flex;
+    justify-content: space-around;
+  }
+  .pkitchen {
+    margin: 62px 66px 46px 48px;
+  }
+  .ptime.robotFont {
+    padding: 9px 16px 8px 16px;
+    margin: 54px 52px 38px 0px;
+  }
+  .dropdown{
+    border-bottom: 1px solid rgba(117, 117, 117, 0.2);
+  }
+  .dropdown ul{
+    display: flex;
+    flex-direction: row;
+  }
+  .dropdown li {
+    margin: 32px 4.6875% 29px 1.042%;
+  }
+  .dropdown input:checked ~ .nav_text {
+    color: rgba(50, 116, 48, 1);
+  }
+   .dropdown input {
+    margin: 0;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  .nav_text {
+    position: relative;
+    color: #626262;
+    cursor: pointer;
+  }
+  .container{
+    padding: 0;
+  }
+  .menuName {
+    margin: 56px 0 32px 0;
+    justify-content: start;
+  }
+  .menuName::after, #salats {
+    display: none;
+  }
+  .card2 {
+    margin: 0 0px 32px 0px;
+    border: 1px solid rgba(117, 117, 127, 0.2);
+  }
+  .card2 img {
+    height: 158px;
+    width: 200px;
+    margin: -1px 0;
+  }
+  .container2{
+    padding: 16px 0px 16px 24px;
+  }
+  
+}
+
+
+@media (min-width: 991px) {
+  main.restaurant {
+    padding: 0px 0 31px 0;
+  }
+  .pushkinBack {
+    background-position: center 54%;
+  }
+  .pushkin {
+    left: 81px;
+  }
+  .pkitchen {
+    margin: 62px 50px 46px 38px;
+  }
+  .ptime {
+    padding: 8px 16px;
+    margin: 54px 29px 38px 0px;
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .dropdown ul{
+    margin-left: 61px;
+  }
+  .dropdown li {
+    margin: 32px 20px 29px 20px;
+  }
+  .container{
+    margin: 0 87px 0 81px;
+  }
+  .card2 {
+    margin: 0 0px 49px 0px;
+    border: 1px solid rgba(117, 117, 127, 0.2);
+  }
+  .container2{
+    padding: 16px 0px 16px 24px;
+  }
+  .card2 img {
+    height: 158px;
+    width: 170px;
+    margin: -1px 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
